@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dachdecker Projekte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Unsere Dachdecker-Projekte</h1>
+    <p>Vorher-Nachher & Galerie</p>
+  </header>
+
+  <section class="slider-section">
+    <h2>Vorher-Nachher</h2>
+    <div class="slider-container">
+      <div class="slider-imgs">
+        <img src="images/vorher1.jpeg" alt="Vorher" class="slider-before" />
+        <img src="images/nachher1.jpeg" alt="Nachher" class="slider-after" />
+      </div>
+      <input type="range" min="0" max="100" value="50" class="slider" />
+    </div>
+  </section>
+
+  <main class="gallery">
+    <h2>Galerie</h2>
+    <div class="gallery-grid">
+      <img src="images/IMG_0208.jpeg" alt="Projekt 1" class="lightbox-img" />
+      <img src="images/IMG_0209.jpeg" alt="Projekt 2" class="lightbox-img" />
+      <img src="images/IMG_0237.jpeg" alt="Projekt 3" class="lightbox-img" />
+      <img src="images/IMG_0238.jpeg" alt="Projekt 4" class="lightbox-img" />
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Großansicht" id="lightbox-img" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Dachdeckerbetrieb Mustermann</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
