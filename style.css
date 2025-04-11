@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(18, 18, 18, 0.9);
+  color: #fff;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+header h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin-top: 10px;
+}
+nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #1e1e1e;
+  border-radius: 4px;
+}
+.hero {
+  position: relative;
+  background: url('https://via.placeholder.com/1500x600/1a1a1a/ffffff?text=Ares+Dachdecker') center/cover no-repeat;
+  color: #fff;
+  padding: 140px 20px 100px;
+  text-align: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+.btn {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #e64a19;
+}
+footer {
+  background-color: #1a1a1a;
+  color: #999;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
